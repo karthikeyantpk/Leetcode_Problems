@@ -4,11 +4,7 @@ public:
         int c = 0;
 
         for(int i=1;i<=n;i++){
-            if(i % 7 == 0)
-                c += i;
-            else if(i % 5 == 0)
-                c += i;
-            else if(i % 3 == 0)
+            if(i % 7 == 0 || i % 5 == 0 || i % 3 == 0)
                 c += i;
         }
         return c;
